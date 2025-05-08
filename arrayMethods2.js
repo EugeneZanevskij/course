@@ -93,6 +93,8 @@ console.log(arrayFromString)
 //     return arr.filter((item, index) => index % 2 === 0) //true - оставляем, false - убираем
 //   }
 
+//Given the number (n), populate an array with all numbers up to and including that number, but excluding zero.
+//https://www.codewars.com/kata/56f69d9f9400f508fb000ba7
 function monkeyCount(n) {
     let result = [];
     
@@ -103,3 +105,30 @@ function monkeyCount(n) {
   }
 
   console.log(monkeyCount(5))
+
+//You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
+//https://www.codewars.com/kata/57cc975ed542d3148f00015b
+
+function check(a, x) {
+    // return a.indexOf(x) !== -1;
+    // 0 - ... - если нашел
+    // -1 - нет совпадений
+
+    //0 !== -1 - 0 не равно -1? = true
+
+    return a.includes(x); //либо True, либо False
+}
+
+
+// our task is to write a function that takes a String and returns an Array/list with the length of each word added to each element .
+// "apple ban" --> ["apple 5", "ban 3"]
+// "you will win" -->["you 3", "will 4", "win 3"]
+// https://www.codewars.com/kata/559d2284b5bb6799e9000047
+
+function addLength(str) {
+    let array = str.split(" "); //["apple", "ban"]
+    let result = array.map((item) => `${item} ${item.length}`); //apple - 5, ban - 3
+    return result;
+}
+
+console.log(addLength("apple ban"));
