@@ -269,3 +269,4 @@ function isOpposite(s1, s2){
 }
 
 console.log(isOpposite('ab', 'AB'));
+

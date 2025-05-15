@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    padding: 5.75rem 1.25rem;
+}
+
+.container {
+    max-width: 69.375rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero__content-left {
+    background: linear-gradient(180deg, #9DFF95 0%, #5BC4FF 100%);
+    max-width: 29.0625rem;
+    width: 100%;
+    height: 29.0625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4.375rem;
+}
+
+.hero__content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.875rem;
+}
