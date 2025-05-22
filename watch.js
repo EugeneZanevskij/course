@@ -32,3 +32,15 @@ function addListItem(text) {
     element.className = "header-3";
     list.appendChild(element);
 }
+
+
+const numbers = document.querySelectorAll('.abilities__list-item-number');
+console.log(numbers);
+
+numbers.forEach((number, index) => {
+    number.addEventListener("click", () => {
+        number.classList.toggle('abilities__list-item-number--secondary');
+        console.log(+number.textContent.trim() + 1);
+        number.textContent = +number.textContent.trim() + 1;
+    });
+})
