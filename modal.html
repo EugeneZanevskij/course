@@ -22,9 +22,18 @@
         </div>
     </section>
     <div class="modal modal--hidden">
-        <div class="modal__content">
+        <form class="modal__content">
             <button class="modal__close"></button>
-        </div>
+            <div class="modal__area">
+                <label class="modal__area-label" for="inputTitle">Заголовок</label>
+                <input class="modal__area-input"  type="text" name="" id="inputTitle">
+            </div>
+            <div class="modal__area">
+                <label class="modal__area-label" for="description">Описание</label>
+                <textarea class="modal__area-textarea" name="" id="description"></textarea>
+            </div>
+            <button class="modal__area-button">Обновить</button>
+        </form>
     </div>
     <script src="./modal.js"></script>
 </body>
